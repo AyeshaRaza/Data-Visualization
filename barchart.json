@@ -1,0 +1,16 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "width": 1000,
+  "height": 700,
+  "data": { "url": "https://raw.githubusercontent.com/AyeshaRaza/Data-Visualization/master/losses2015_transformed.csv"},
+  "title": "Losses 2015 [$] State",
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "field": "Damage_Descp", "type": "ordinal", "sort": {"field": "Amount", "op": "sum", "order": "ascending"}, "scale": {"rangeStep": 17}
+    },
+    "x": {
+      "aggregate": "sum", "field": "Amount", "type": "quantitative", "axis": {"title": "Total Losses"}
+    }
+  }
+}
