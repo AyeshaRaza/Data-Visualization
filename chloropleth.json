@@ -33,10 +33,18 @@
 {
  "name": "color",
  "type": "quantize",
- "domain": [0, 100000000],
+ "domain": [0, 1000000],
  "range": {"scheme": "blues", "count": 10}
 }
 ],
+
+"legends": [
+   {
+     "fill": "color",
+     "orient": "bottom-right",
+     "title": "Total Losses"
+   }
+ ],
 
 "marks": [
 {
